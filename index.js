@@ -8,7 +8,7 @@ const searchButton = document.getElementById("search-button")
 
 async function fetchRandomNews() {
     try {
-        const apiUrl = `https://newsapi.org/v2/everything?q=tesla&from=2024-10-18&sortBy=publishedAt&pageSize=10&apiKey=${apiKey}`;
+        const apiUrl = `https://newsapi.org/v2/everything?q=tesla&from=2024-12-05&sortBy=publishedAt&apiKey=${apiKey}`;
         const response = await fetch(apiUrl)
         const data = await response.json();
         console.log(data);
@@ -33,7 +33,7 @@ searchButton.addEventListener('click', async () => {
 
 async function fetchNewsQuery(query) {
     try {
-        const apiUrl = `https://newsapi.org/v2/everything?q=${query}&from=2024-10-18&sortBy=publishedAt&pageSize=10&apiKey=${apiKey}`;
+        const apiUrl = `https://newsapi.org/v2/everything?q=${query}&from=2024-12-05&sortBy=publishedAt&apiKey=${apiKey}`;
         const response = await fetch(apiUrl)
         const data = await response.json();
         console.log(data);
@@ -80,6 +80,5 @@ function displayBlogs(articles) {
         console.log(articles);
     } catch (error) {
         console.log("Error fetching random news", error);
-
     }
 })();
