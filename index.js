@@ -1,4 +1,4 @@
-const apiKey = "0818723f0b6a42379820fbb08d4da07d"
+const apiKey = "360ca48b697808904559144ccbd67bb1"
 
 const blogContainer = document.getElementById("blog-container")
 
@@ -8,7 +8,8 @@ const searchButton = document.getElementById("search-button")
 
 async function fetchRandomNews() {
     try {
-        const apiUrl = `https://newsapi.org/v2/everything?q=tesla&from=2024-12-05&sortBy=publishedAt&apiKey=${apiKey}`;
+        // const apiUrl = `https://newsapi.org/v2/everything?q=tesla&from=2024-12-05&sortBy=publishedAt&apiKey=${apiKey}`;
+        const apiUrl = `https://gnews.io/api/v4/search?q=example&lang=en&country=us&max=10&apikey=${apiKey}`;
         const response = await fetch(apiUrl)
         const data = await response.json();
         console.log(data);
@@ -33,7 +34,8 @@ searchButton.addEventListener('click', async () => {
 
 async function fetchNewsQuery(query) {
     try {
-        const apiUrl = `https://newsapi.org/v2/everything?q=${query}&from=2024-12-05&sortBy=publishedAt&apiKey=${apiKey}`;
+        // const apiUrl = `https://newsapi.org/v2/everything?q=${query}&from=2024-12-05&sortBy=publishedAt&apiKey=${apiKey}`;
+        const apiUrl = `https://gnews.io/api/v4/top-headlines?${query}=general&apikey=${apiKey}`;
         const response = await fetch(apiUrl)
         const data = await response.json();
         console.log(data);
