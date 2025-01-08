@@ -16,7 +16,7 @@ A lightweight and responsive News App that fetches real-time news articles using
 
 ## Demo
 
-Check out the live demo here: [News App Live Demo](#) *(I will add the link once deployed)*
+Check out the live demo here: [News App Live Demo](#) *(https://geekykiran.github.io/News-fetching-app/)*
 
 ---
 
