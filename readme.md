@@ -31,7 +31,7 @@ Follow these steps to run the project locally:
 
 2. **Navigate to the Project Directory**:
    ```bash
-   cd news-app
+   cd News-fetching-app
    ```
 
 3. **Open the Project in a Browser**:
